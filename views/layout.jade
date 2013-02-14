@@ -1,0 +1,28 @@
+doctype 5
+html
+  head
+    title Hybreed Search Engine
+    meta(name='description', content='Google and DuckDuckGo !bang hybrid search engine. Query Google Malaysia by default.')
+    meta(name='author', content='MdNor')
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    link(rel='stylesheet', href='http://fonts.googleapis.com/css?family=Shojumaru|Sanchez:400italic')
+    link(rel='shortcut icon', href='/images/favicon.ico')
+    link(rel='search', type='application/opensearchdescription+xml', href='/opensearch.xml', title='Hybreed')
+    meta(name='description', 'content='Hybreed queried Google Malaysia and DuckDuckGo !bang for better and faster search experience')
+    script(type='text/javascript')
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-37457940-1']);
+      _gaq.push(['_trackPageview']);
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    script(type='text/javascript')
+      function focusSearch() {
+        if (document.getElementById("search-input")) {
+          document.getElementById("search-input").focus();
+        }
+      }
+  body(onload='focusSearch()')
+    block content

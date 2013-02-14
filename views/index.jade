@@ -1,0 +1,18 @@
+extends layout
+
+block content
+  #search-container
+    h1 Hybreed
+    form#search-form(method='get', action='')
+      input(type='text', id='search-input', name='q', required, placeholder='Insert your search terms')
+      button(type='submit') Go!
+    p Search Google <a href='https://google.com.my', target='_blank', title='Google Malaysia'>Malaysia</a> or DuckDuckGo <a href='https://duckduckgo.com/bang.html', target='_blank', title='DuckDuckGo !bang List'>!bang</a>
+  #footer
+    p  
+      a(href="/about") About
+      |  | 
+      a(href="/support") Support
+      |  | 
+      a(href='http://mdnor.my', target='_blank') Contact
+  footer#credit
+    p Powered by Node.js
